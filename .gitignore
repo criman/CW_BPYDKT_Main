@@ -46,7 +46,9 @@ Thumbs.db
 /build/
 
 # Source Insight / project cache (si4project)
-# ?? Source Insight ???????/????
+# Source Insight / project cache (si4project)
+# ????? .si4project ??????????
+*.si4project/
 .si4project/
 *.sisc
 *.sip_sym
@@ -58,3 +60,12 @@ keil/Objects/
 keil/Output/
 
 
+# Keil ?????/IDE ??????????
+keil/.clang-format
+keil/.eide/
+keil/EventRecorderStub.scvd
+keil/JLinkLog.txt
+keil/JLinkSettings.ini
+keil/*.lnk
+keil/*.code-workspace
+keil/*.uvproj
