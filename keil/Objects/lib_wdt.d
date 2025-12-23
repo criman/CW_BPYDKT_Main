@@ -1,9 +1,0 @@
-.\objects\lib_wdt.o: ..\library\StdDriver\src\lib_wdt.c
-.\objects\lib_wdt.o: ..\library\StdDriver\inc\lib_wdt.h
-.\objects\lib_wdt.o: ..\code\_CMSIS\system_ES8H018x.h
-.\objects\lib_wdt.o: ..\library\Device\ES8H018x\Include\ES8H018x.h
-.\objects\lib_wdt.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\lib_wdt.o: ..\code\_CMSIS\core_cm0.h
-.\objects\lib_wdt.o: ..\code\_CMSIS\core_cmInstr.h
-.\objects\lib_wdt.o: ..\code\_CMSIS\core_cmFunc.h
-.\objects\lib_wdt.o: ..\library\StdDriver\inc\type.h
