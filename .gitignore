@@ -1,0 +1,48 @@
+# .gitignore ¡ª for Keil uVision / ARM projects
+#
+# Based on: https://github.com/criman/CursorAgent/raw/refs/heads/main/%E6%96%B0keil%E9%A1%B%E7%9B%AEgitignore%E6%8C%87%E5%8D%97.md
+
+# Keil / toolchain generated files
+*.axf
+*.htm
+*.map
+*.tra
+*.dep
+*.d
+*.o
+*.obj
+*.lst
+*.lnp
+*.bin
+*.hex
+*.elf
+*.crf
+*.fed
+*.__i
+*._2i
+
+# Keil project/user-specific settings and UI files
+*.uvopt
+*.uvoptx
+*.uvgui.*
+
+# Backup and temporary files
+*.bak
+*.tmp
+*~
+.#*
+
+# IDE/editor folders
+.vscode/
+.vs/
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Build output directories (common names)
+/Debug/
+/Release/
+/build/
+
+
