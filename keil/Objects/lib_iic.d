@@ -1,0 +1,9 @@
+.\objects\lib_iic.o: ..\library\StdDriver\src\lib_iic.c
+.\objects\lib_iic.o: ..\library\StdDriver\inc\lib_iic.h
+.\objects\lib_iic.o: ..\library\Device\ES8H018x\Include\ES8H018x.h
+.\objects\lib_iic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lib_iic.o: ..\code\_CMSIS\core_cm0.h
+.\objects\lib_iic.o: ..\code\_CMSIS\core_cmInstr.h
+.\objects\lib_iic.o: ..\code\_CMSIS\core_cmFunc.h
+.\objects\lib_iic.o: ..\library\StdDriver\inc\type.h
+.\objects\lib_iic.o: ..\code\_CMSIS\system_ES8H018x.h

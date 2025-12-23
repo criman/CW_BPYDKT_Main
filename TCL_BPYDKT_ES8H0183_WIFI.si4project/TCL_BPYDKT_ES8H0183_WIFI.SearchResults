@@ -1,0 +1,8 @@
+---- UART3_lhh Matches (7 in 5 files) ----
+irqhandler.c (code\_mdev) line 197 : #if defined    UART3_lhh
+main in main.c (code\_msys) :     #if defined		UART3_lhh
+main in main.c (code\_msys) : 		#if defined 	UART3_lhh
+Uart.c (code\Module\Module32_Uart_V1.0.0) line 16 : #if defined		UART3_lhh
+Uart.c (code\Module\Module32_Uart_V1.0.0) line 43 : #if defined		UART3_lhh
+Uart.h (code\Module\Module32_Uart_V1.0.0) line 78 : #define UART3_lhh //lcx 20240427 
+Uart_app.c (code\Module\Module32_Uart_V1.0.0) line 17 : #if defined		UART3_lhh

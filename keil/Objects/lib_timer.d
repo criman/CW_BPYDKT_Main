@@ -1,0 +1,9 @@
+.\objects\lib_timer.o: ..\library\StdDriver\src\lib_timer.c
+.\objects\lib_timer.o: ..\library\StdDriver\inc\lib_timer.h
+.\objects\lib_timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lib_timer.o: ..\library\Device\ES8H018x\Include\ES8H018x.h
+.\objects\lib_timer.o: ..\code\_CMSIS\core_cm0.h
+.\objects\lib_timer.o: ..\code\_CMSIS\core_cmInstr.h
+.\objects\lib_timer.o: ..\code\_CMSIS\core_cmFunc.h
+.\objects\lib_timer.o: ..\library\StdDriver\inc\type.h
+.\objects\lib_timer.o: ..\code\_CMSIS\system_ES8H018x.h

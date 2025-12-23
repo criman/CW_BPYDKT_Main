@@ -1,0 +1,262 @@
+[
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Stepmotor_V1.0.0\\Stepmotor.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Stepmotor_V1.0.0\\Stepmotor.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Stepmotor_V1.0.0\\Stepmotor_app.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Stepmotor_V1.0.0\\Stepmotor_app.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Switch_V1.0.0\\Switch.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Switch_V1.0.0\\Switch.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Stepmotor_V1.0.0\\Swing.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Stepmotor_V1.0.0\\Swing.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Ad_ES8H018X_V1.0.0\\Ad_app.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Ad_ES8H018X_V1.0.0\\Ad_app.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_EEP24C02_V1.0.0\\EEP24C02.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_EEP24C02_V1.0.0\\EEP24C02.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Ad_ES8H018X_V1.0.0\\Ad.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module_Ad_ES8H018X_V1.0.0\\Ad.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module32_Uart_V1.0.0\\Uart.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module32_Uart_V1.0.0\\Uart.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module32_Uart_V1.0.0\\Uart_app.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Module\\Module32_Uart_V1.0.0\\Uart_app.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_CMSIS\\system_es8h018x.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_CMSIS\\system_es8h018x.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\mcu_sdk\\mcu_api.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\mcu_sdk\\mcu_api.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\mcu_sdk\\system.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\mcu_sdk\\system.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\mcu_sdk\\protocol.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\mcu_sdk\\protocol.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_mdev\\Init_ES8H018X_EX8H0163.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_mdev\\Init_ES8H018X_EX8H0163.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_mdev\\irqhandler.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_mdev\\irqhandler.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_mdev\\systick.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_mdev\\systick.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_msys\\Func.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_msys\\Func.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_msys\\main.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\_msys\\main.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\CmdIn.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\CmdIn.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\CmdOut.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\CmdOut.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\CommDisp.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\CommDisp.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\CommMotDrv.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\CommMotDrv.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Comp.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Comp.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\DCFan.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\DCFan.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Defrost.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Defrost.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\EAHeater.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\EAHeater.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\ExpValve.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\ExpValve.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Fan.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Fan.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\FourWay.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\FourWay.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Function.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Function.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\LowPower.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\LowPower.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Protect.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Protect.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Remember.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Remember.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Tempr.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Tempr.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Timer.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\Timer.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\tWiFi.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\tWiFi.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\UVC.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\UVC.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\WaterBox.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\WaterBox.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\WPMotor.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\code\\Function\\WPMotor.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\initram.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\initram.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_adc.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_adc.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_crc.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_crc.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_gpio.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_gpio.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_iap.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_iap.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_iic.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_iic.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_printf.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_printf.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_scs.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_scs.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_scu.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_scu.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_spi.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_spi.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_timer.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_timer.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_uart.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_uart.c"
+    },
+    {
+        "directory": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX",
+        "command": "clang      -c \"j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_wdt.c\"",
+        "file": "j:\\1_SR_Work_2024\\项目\\01TCL德龙_01移动空调_01_01_SR-DSL-YD-M\\05_软件\\0_Code\\20240223_TCL_BPYDKT_ES8H0183_WIFI_V01.0.0_XXXX\\library\\StdDriver\\src\\lib_wdt.c"
+    }
+]
