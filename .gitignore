@@ -45,4 +45,16 @@ Thumbs.db
 /Release/
 /build/
 
+# Source Insight / project cache (si4project)
+# ?? Source Insight ???????/????
+.si4project/
+*.sisc
+*.sip_sym
+*.siproj
+
+# Keil listings / other generated folders
+keil/Listings/
+keil/Objects/
+keil/Output/
+
 
