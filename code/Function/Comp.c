@@ -145,7 +145,15 @@ void    App_Comp_RunHzInitIndex(void)
 	{
 		if (System.Mode == ENUM_SYSMODE_HUM)
 		{
-			Comp.u8_InitIndex = C_COMP_HUMI_FC;	//20231122 除湿 频率FC12
+			// 除湿模式限制档位由EEP参数控制，EEP.u8_rdBuf[145]
+			if ((EEP.u8_rdBuf[145] > 0) && (EEP.u8_rdBuf[145] <= 15))
+			{
+				Comp.u8_InitIndex = EEP.u8_rdBuf[145];
+			}
+			else
+			{
+				Comp.u8_InitIndex = C_COMP_HUMI_FC;	//回退到默认常量
+			}
 		}
 		
 		Comp.u8_TargetSrc = Comp.u8_Cold_TargetHZ[Comp.u8_InitIndex];
@@ -387,7 +395,15 @@ void    App_Comp_T1TSDelta(void)
 		{
 			if (System.Mode == ENUM_SYSMODE_HUM)
 			{
-				Comp.u8_TargetSrc = Comp.u8_Cold_TargetHZ[C_COMP_HUMI_FC];	//20231122 除湿 频率FC12
+				// 除湿模式目标频率由EEP.u8_rdBuf[145]决定，超出范围回退默认档位
+				if ((EEP.u8_rdBuf[145] > 0) && (EEP.u8_rdBuf[145] <= 15))
+				{
+					Comp.u8_TargetSrc = Comp.u8_Cold_TargetHZ[EEP.u8_rdBuf[145]];
+				}
+				else
+				{
+					Comp.u8_TargetSrc = Comp.u8_Cold_TargetHZ[C_COMP_HUMI_FC];
+				}
 			}
 			else
 			{
@@ -465,7 +481,15 @@ void    App_Comp_InDoorFan(void)
 		{
 			if (System.Mode == ENUM_SYSMODE_HUM)
 			{
-				u8_LimitFreqMax = Comp.u8_Cold_TargetHZ[C_COMP_HUMI_FC];		//除湿内风机低风档固定限频FC8,不在E方开放
+				// 除湿内风低风时限频档位由EEP.u8_rdBuf[145]控制（有值且合理时）
+				if ((EEP.u8_rdBuf[145] > 0) && (EEP.u8_rdBuf[145] <= 15))
+				{
+					u8_LimitFreqMax = Comp.u8_Cold_TargetHZ[EEP.u8_rdBuf[145]];
+				}
+				else
+				{
+					u8_LimitFreqMax = Comp.u8_Cold_TargetHZ[C_COMP_HUMI_FC];
+				}
 			}
 			else
 			{
