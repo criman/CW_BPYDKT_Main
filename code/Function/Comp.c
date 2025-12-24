@@ -715,19 +715,19 @@ void    App_Comp_T4(void)
 			
 
 
-			//外环温小于17℃最小频率不能低于30HZ
+			//外环温小于17℃最小频率不能低于FC3档位
 			if (SystemMode.f_PerTest == 0)
 			{
 				if (T4.s16_ValueMul10 < 170)
 				{
-					if (Comp.u8_TargetFreq < 30)
+					if (Comp.u8_TargetFreq < Comp.u8_Cold_TargetHZ[3])
 					{
-						Comp.u8_TargetFreq = 30;
+						Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[3];
 					}
 					
-					if (Comp.u8_TargetHZ < 30)
+					if (Comp.u8_TargetHZ < Comp.u8_Cold_TargetHZ[3])
 					{
-						Comp.u8_TargetHZ = 30;
+						Comp.u8_TargetHZ = Comp.u8_Cold_TargetHZ[3];
 					}					
 				}
 			}
