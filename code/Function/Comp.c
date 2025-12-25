@@ -1433,25 +1433,38 @@ Revision History   1:
 ****************************************************************************************************/
 void    App_Comp_Silence(void)
 {
+	U8 u8_SilenceMaxFreq;
+
 	if (Defrost.f_Enable == 0)//化霜时除外	20231227
 	{
 		if (SystemMode.f_Silence)
 		{
+			//EEP.u8_rdBuf[146] 静音模式压缩机最高运行频率档位
+			if ((EEP.u8_rdBuf[146] > 0) && (EEP.u8_rdBuf[146] <= 15))
+			{
+				u8_SilenceMaxFreq = EEP.u8_rdBuf[146];
+			}
+			else
+			{
+				//默认值
+				u8_SilenceMaxFreq = 4;	//FC4
+			}
+
 			if (SystemMode.f_Cold == 1)
 			{
-				//制冷睡眠限频
-				if (Comp.u8_TargetFreq > Comp.u8_Cold_TargetHZ[4])
+				//制冷静音限频
+				if (Comp.u8_TargetFreq > Comp.u8_Cold_TargetHZ[u8_SilenceMaxFreq])
 				{
-					Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[4];	//FC4
+					Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[u8_SilenceMaxFreq];
 				}
 			}
 			else if (SystemMode.f_Heat == 1)
 			{
-				//制热睡眠限频
-				if (Comp.u8_TargetFreq > Comp.u8_Heat_TargetHZ[1])
+				//制热静音限频
+				if (Comp.u8_TargetFreq > Comp.u8_Heat_TargetHZ[u8_SilenceMaxFreq])
 				{
-					Comp.u8_TargetFreq = Comp.u8_Heat_TargetHZ[1];	//FH1
-				}		
+					Comp.u8_TargetFreq = Comp.u8_Heat_TargetHZ[u8_SilenceMaxFreq];
+				}
 			}
 		}
 	}

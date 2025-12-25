@@ -112,7 +112,7 @@ void    App_Fan_InDoor(void)
 	}
 	else if ((SystemMode.f_Silence) && (Comp.u8_RealHZ <= (Comp.u8_Cold_TargetHZ[4] + 1)))
 	{
-		Fan.Indoor.Level = ENUM_FANLEVEL_LOW_S; //风速强力档
+		Fan.Indoor.Level = ENUM_FANLEVEL_LOW_S; //静音档
 		Fan.Indoor.f_AppOn = ON;
 	}
 	else if (SystemMode.f_Force)
