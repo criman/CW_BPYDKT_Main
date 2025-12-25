@@ -1367,19 +1367,49 @@ void    App_Comp_ForceFun(void)
 {
 	if (SystemMode.f_Force)
 	{
-		if (System.u32_ForceRunCount < 36000)	//1小时内按最高频率运行
+		//根据环境温度T1限频控制
+		if (T1.s16_ValueMul10bc >= 500)		//T1≥50℃
 		{
-			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[15];		//FC15
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[0];		//FC0
 		}
-		else 	//2小时内最高按FC14频率运行
+		else if (T1.s16_ValueMul10bc >= 450)	//45℃≤T1＜50℃
 		{
-			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[14];		//FC14
-			if (System.u32_ForceRunCount >= 72000)	//2小时外退出强劲 //lcx add 20240625
-			{
-				SystemMode.f_Force = 0;
-			}
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[0];		//FC0
+		}
+		else if (T1.s16_ValueMul10bc >= 400)	//40℃≤T1＜45℃
+		{
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[2];		//FC2
+		}
+		else if (T1.s16_ValueMul10bc >= 330)	//33℃≤T1＜40℃
+		{
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[12];	//FC12
+		}
+		else if (T1.s16_ValueMul10bc >= 300)	//30℃≤T1＜33℃
+		{
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[15];	//FC15
+		}
+		else if (T1.s16_ValueMul10bc >= 250)	//25℃≤T1＜30℃
+		{
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[15];	//FC15
+		}
+		else if (T1.s16_ValueMul10bc >= 200)	//20℃≤T1＜25℃
+		{
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[15];	//FC15
+		}
+		else if (T1.s16_ValueMul10bc >= 150)	//15℃≤T1＜20℃
+		{
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[12];	//FC12
+		}
+		else if (T1.s16_ValueMul10bc >= 70)	//7℃≤T1＜15℃
+		{
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[12];	//FC12
+		}
+		else	//T1＜7℃
+		{
+			Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[0];		//FC0
 		}
 
+		//强劲功能下不自行计算运行时间，不自动退出
 		//lcx 20240625规格书更新：
 		//9.4.5 在强力模式运行2小时内，强力模式达温停机有效（达温停压机，上风机一直以强力风运行，不执行停10开1达温逻辑），达温停机后仅外机处理退出强力模式运行，显示不退出强力模式。
 		/*
