@@ -748,13 +748,14 @@ void    App_Comp_T4(void)
 					{
 						Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[3];
 					}
-					
+
 					if (Comp.u8_TargetHZ < Comp.u8_Cold_TargetHZ[3])
 					{
 						Comp.u8_TargetHZ = Comp.u8_Cold_TargetHZ[3];
-					}					
+					}
 				}
 			}
+
 		}
 		else if (SystemMode.f_Heat == 1)	//制热
 		{
@@ -1455,8 +1456,64 @@ void    App_Comp_Silence(void)
 		}
 	}
 }
+/****************************************************************************************************
+Function Name       :void    App_Comp_DeNoise(void)
+Description         :保守功能下的压缩机频率控制
+Input               :
+Return              :
+Author              :Assistant
+Version             :V1.0
+Revision History   1:
+                   2:
+****************************************************************************************************/
+void    App_Comp_DeNoise(void)
+{
+	if (SystemMode.f_DeNoise == 1)	//保守功能开启
+	{
+		if (SystemMode.f_Cold == 1)	//制冷模式
+		{
+			if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_1)	//温度区间1: T1≥33℃
+			{
+				//所有档位都是当前档位-1（最低FC1）
+				if (Comp.u8_TargetFreq > Comp.u8_Cold_TargetHZ[1])
+				{
+					Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[Comp.u8_InitIndex > 1 ? Comp.u8_InitIndex - 1 : 1];
+				}
 
+				if (Comp.u8_TargetHZ > Comp.u8_Cold_TargetHZ[1])
+				{
+					Comp.u8_TargetHZ = Comp.u8_Cold_TargetHZ[Comp.u8_InitIndex > 1 ? Comp.u8_InitIndex - 1 : 1];
+				}
+			}
+			else if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_2)	//温度区间2: 27℃≤T1＜33℃
+			{
+				//所有档位都是当前档位-1（最低FC1）
+				if (Comp.u8_TargetFreq > Comp.u8_Cold_TargetHZ[1])
+				{
+					Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[Comp.u8_InitIndex > 1 ? Comp.u8_InitIndex - 1 : 1];
+				}
 
+				if (Comp.u8_TargetHZ > Comp.u8_Cold_TargetHZ[1])
+				{
+					Comp.u8_TargetHZ = Comp.u8_Cold_TargetHZ[Comp.u8_InitIndex > 1 ? Comp.u8_InitIndex - 1 : 1];
+				}
+			}
+			else if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_3)	//温度区间3: T1＜27℃
+			{
+				//所有档位都是34Hz
+				if (Comp.u8_TargetFreq > 34)
+				{
+					Comp.u8_TargetFreq = 34;
+				}
+
+				if (Comp.u8_TargetHZ > 34)
+				{
+					Comp.u8_TargetHZ = 34;
+				}
+			}
+		}
+	}
+}
 /****************************************************************************************************
 Function Name       :void    App_Comp_Sleep(void)
 Description         :睡眠模式下的压缩机频率控制
@@ -1638,6 +1695,7 @@ void    App_Comp_ProCon(void)
 		App_Comp_T2Heat();			//制热运行室内风速对压缩机频率运行控制		
 		App_Comp_Sleep();			//睡眠模式下的压缩机频率控制
 		App_Comp_Silence();			//静音模式下的压缩机频率控制
+		App_Comp_DeNoise();			//保守功能下的压缩机频率控制
 		App_Comp_PerTest();			//性能测试模式下压缩机频率控制
 		App_Comp_WatFull();		    //水满情况下压缩机频率控制	
 		App_Comp_AntiDew();			//防凝露压缩机限频控制
@@ -1733,14 +1791,15 @@ void    App_Comp_ProCon(void)
 		|| (Protect.CompCurrStatus == ENUM_PROSTATUS_CONT)
   		|| (Tempr.T2HeatZone == ENUM_TEMPT2HEATZONE_CON))			//存在频率保持的情况
 		{
-			App_Comp_ForceFun();		//强力模式下的压缩机频率控制	
+			App_Comp_ForceFun();		//强力模式下的压缩机频率控制
 			App_Comp_InDoorFan();		//室内风速对压缩机运行频率的控制
 			App_Comp_T4();				//室外温度对压缩机运行频率的控制
-			App_Comp_T2Heat();			//制热运行室内风速对压缩机频率运行控制		
+			App_Comp_T2Heat();			//制热运行室内风速对压缩机频率运行控制
 			App_Comp_Sleep();			//睡眠模式下的压缩机频率控制
 			App_Comp_Silence();			//静音模式下的压缩机频率控制
+			App_Comp_DeNoise();			//保守功能下的压缩机频率控制
 			App_Comp_PerTest();			//性能测试模式下压缩机频率控制
-			App_Comp_WatFull();		    //水满情况下压缩机频率控制	
+			App_Comp_WatFull();		    //水满情况下压缩机频率控制
 			App_Comp_AntiDew();			//防凝露压缩机限频控制
 			
 			
@@ -1792,8 +1851,9 @@ void    App_Comp_ProCon(void)
 			App_Comp_T2Heat();			//制热运行室内风速对压缩机频率运行控制		
 			App_Comp_Sleep();			//睡眠模式下的压缩机频率控制
 			App_Comp_Silence();			//静音模式下的压缩机频率控制
+			App_Comp_DeNoise();			//保守功能下的压缩机频率控制
 			App_Comp_PerTest();			//性能测试模式下压缩机频率控制
-			App_Comp_WatFull();		    //水满情况下压缩机频率控制		
+			App_Comp_WatFull();		    //水满情况下压缩机频率控制
 			App_Comp_AntiDew();			//防凝露压缩机限频控制
 			
 			Protect.SystemStatus = ENUM_PROSTATUS_SLOWUP;

@@ -1136,4 +1136,80 @@ void    Func_Temprature(void)
 	TempT4CoolZone();		//T4制冷温区
 	TempT4HeatZone();		//T4制热温区
 	TempT2HeatZone();		//T2制热温区
+	TempConservativeZone();	//保守功能温度区间
+}
+/****************************************************************************************************
+Function Name       :void    TempConservativeZone(void)
+Description         :保守功能温度区间判断
+Input               :
+Return              :
+Author              :Assistant
+Version             :V1.0
+Revision History   1:
+                   2:
+****************************************************************************************************/
+void    TempConservativeZone(void)
+{
+	ENUM_CONSERVATIVE_ZONE CurrentZone = ENUM_CONSERVATIVE_ZONE_INIT;
+
+	//根据环境温度T1判断当前温度区间
+	if (T1.s16_ValueMul10bc >= 330)	//T1≥33℃
+	{
+		CurrentZone = ENUM_CONSERVATIVE_ZONE_1;
+	}
+	else if (T1.s16_ValueMul10bc >= 270)	//27℃≤T1＜33℃
+	{
+		CurrentZone = ENUM_CONSERVATIVE_ZONE_2;
+	}
+	else	//T1＜27℃
+	{
+		CurrentZone = ENUM_CONSERVATIVE_ZONE_3;
+	}
+
+	//保守功能温度区间变化检测
+	if (SystemMode.f_DeNoise == 1)	//保守功能开启
+	{
+		if (Tempr.ConservativeZoneBak != CurrentZone)	//温度区间发生变化
+		{
+			if (Tempr.ConservativeZoneBak == ENUM_CONSERVATIVE_ZONE_INIT)	//初始状态
+			{
+				Tempr.ConservativeZone = CurrentZone;
+				Tempr.ConservativeZoneBak = CurrentZone;
+				Tempr.u16_ConservativeDelayCount = 0;
+			}
+			else if ((Tempr.ConservativeZoneBak == ENUM_CONSERVATIVE_ZONE_2 && CurrentZone == ENUM_CONSERVATIVE_ZONE_3) ||
+					 (Tempr.ConservativeZoneBak == ENUM_CONSERVATIVE_ZONE_3 && CurrentZone == ENUM_CONSERVATIVE_ZONE_2))
+			//在区间2和区间3之间变换
+			{
+				if (Tempr.u16_ConservativeDelayCount >= 6000)	//延时10分钟(6000*100ms)
+				{
+					//延时结束，更新温度区间
+					Tempr.ConservativeZone = CurrentZone;
+					Tempr.ConservativeZoneBak = CurrentZone;
+					Tempr.u16_ConservativeDelayCount = 0;
+				}
+				else
+				{
+					//延时中，保持原有状态
+					Tempr.u16_ConservativeDelayCount++;
+				}
+			}
+			else	//其他区间变换，直接更新
+			{
+				Tempr.ConservativeZone = CurrentZone;
+				Tempr.ConservativeZoneBak = CurrentZone;
+				Tempr.u16_ConservativeDelayCount = 0;
+			}
+		}
+		else	//温度区间未发生变化
+		{
+			Tempr.u16_ConservativeDelayCount = 0;	//重置计数器
+		}
+	}
+	else	//保守功能关闭
+	{
+		Tempr.ConservativeZone = CurrentZone;
+		Tempr.ConservativeZoneBak = CurrentZone;
+		Tempr.u16_ConservativeDelayCount = 0;
+	}
 }

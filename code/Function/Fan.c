@@ -456,7 +456,26 @@ void    Drv_Fan_InDoor(void)
 		{
 			if ((SystemMode.f_Cold == 1) || (SystemMode.f_Fan == 1))
 			{
-				if ((SystemMode.f_DeNoise) || (SystemMode.f_Sleep))
+				if (SystemMode.f_DeNoise)	//保守功能
+				{
+					if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_1)	//温度区间1: T1≥33℃
+					{
+						Fan.Indoor.u16_TargetRPM = 1150;
+					}
+					else if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_2)	//温度区间2: 27℃≤T1＜33℃
+					{
+						Fan.Indoor.u16_TargetRPM = 1100;
+					}
+					else if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_3)	//温度区间3: T1＜27℃
+					{
+						Fan.Indoor.u16_TargetRPM = 800;
+					}
+					else
+					{
+						Fan.Indoor.u16_TargetRPM = 1100;	//默认值
+					}
+				}
+				else if (SystemMode.f_Sleep)
 				{
 					if (T4.s16_ValueMul10 >= 330)
 					{
@@ -466,12 +485,12 @@ void    Drv_Fan_InDoor(void)
 					{
 						Fan.Indoor.u16_TargetRPM = 1100;
 					}
-					else 
+					else
 					{
 						Fan.Indoor.u16_TargetRPM = 800;
 					}
 				}
-				else 
+				else
 				{
 					// EE.PARA. C_REMEMBER_PARA01_05;        //105			//常规-制冷-高风
 					Fan.Indoor.u16_TargetRPM = TempValueMul10(EEP.u8_rdBuf[22]);
@@ -492,7 +511,26 @@ void    Drv_Fan_InDoor(void)
 		{
 			if ((SystemMode.f_Cold == 1) || (SystemMode.f_Fan == 1))
 			{
-				if ((SystemMode.f_DeNoise) || (SystemMode.f_Sleep))
+				if (SystemMode.f_DeNoise)	//保守功能
+				{
+					if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_1)	//温度区间1: T1≥33℃
+					{
+						Fan.Indoor.u16_TargetRPM = 1050;
+					}
+					else if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_2)	//温度区间2: 27℃≤T1＜33℃
+					{
+						Fan.Indoor.u16_TargetRPM = 950;
+					}
+					else if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_3)	//温度区间3: T1＜27℃
+					{
+						Fan.Indoor.u16_TargetRPM = 800;
+					}
+					else
+					{
+						Fan.Indoor.u16_TargetRPM = 950;	//默认值
+					}
+				}
+				else if (SystemMode.f_Sleep)
 				{
 					if (T4.s16_ValueMul10 >= 330)
 					{
@@ -502,12 +540,12 @@ void    Drv_Fan_InDoor(void)
 					{
 						Fan.Indoor.u16_TargetRPM = 950;
 					}
-					else 
+					else
 					{
 						Fan.Indoor.u16_TargetRPM = 800;
 					}
 				}
-				else 
+				else
 				{
 					// EE.PARA. C_REMEMBER_PARA01_06;        //90			//常规-制冷-中风
 					Fan.Indoor.u16_TargetRPM = TempValueMul10(EEP.u8_rdBuf[23]);
@@ -528,7 +566,26 @@ void    Drv_Fan_InDoor(void)
 		{
 			if ((SystemMode.f_Cold == 1) || (SystemMode.f_Fan == 1) || Fan.f_DeMold)
 			{
-				if ((SystemMode.f_DeNoise) || (SystemMode.f_Sleep))
+				if (SystemMode.f_DeNoise)	//保守功能
+				{
+					if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_1)	//温度区间1: T1≥33℃
+					{
+						Fan.Indoor.u16_TargetRPM = 850;
+					}
+					else if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_2)	//温度区间2: 27℃≤T1＜33℃
+					{
+						Fan.Indoor.u16_TargetRPM = 800;
+					}
+					else if (Tempr.ConservativeZone == ENUM_CONSERVATIVE_ZONE_3)	//温度区间3: T1＜27℃
+					{
+						Fan.Indoor.u16_TargetRPM = 800;
+					}
+					else
+					{
+						Fan.Indoor.u16_TargetRPM = 800;	//默认值
+					}
+				}
+				else if (SystemMode.f_Sleep)
 				{
 					if (T4.s16_ValueMul10 >= 330)
 					{
@@ -538,12 +595,12 @@ void    Drv_Fan_InDoor(void)
 					{
 						Fan.Indoor.u16_TargetRPM = 800;
 					}
-					else 
+					else
 					{
 						Fan.Indoor.u16_TargetRPM = 800;
 					}
 				}
-				else 
+				else
 				{
 					// EE.PARA. C_REMEMBER_PARA01_07;        //80			//常规-制冷-低风
 					Fan.Indoor.u16_TargetRPM = TempValueMul10(EEP.u8_rdBuf[24]);
