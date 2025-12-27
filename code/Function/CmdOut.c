@@ -978,7 +978,12 @@ void    DisplayBoard_Byte27_Update(void)
 	else						 CommDisp.Tx.Byte27.var.DeNoise = Enum_DISABLE;
 
 	//--------------------------------------------------------------------------------------------------//
-	
+
+	if (SystemMode.f_SelfClean)	 CommDisp.Tx.Byte27.var.SelfClean = Enum_ENABLE;
+	else						 CommDisp.Tx.Byte27.var.SelfClean = Enum_DISABLE;
+
+	//--------------------------------------------------------------------------------------------------//
+
 //	CommDisp.Tx.Byte27.var.DeWatering = ENUM_DISABLE;
 //	
 //	//--------------------------------------------------------------------------------------------------//

@@ -44,11 +44,11 @@ void    Log_WPMotor(void)
 {
 	if (WPMotor.f_DrvOn == OFF)
 	{
-		if ((WPMotor.f_AppOn == ON) && (((T4.f_Error == 0) && (T4.s16_ValueMul10 > 50)) || (System.Enum_Status == ENUM_STATUS_BUSSCHK)) && 
-			(Comp.f_DrvOn == ON) && (WPMotor.u16_CompOnDelay == 0))
+		if ((WPMotor.f_AppOn == ON) && (((T4.f_Error == 0) && (T4.s16_ValueMul10 > 50)) || (System.Enum_Status == ENUM_STATUS_BUSSCHK)) &&
+			(Comp.f_DrvOn == ON) && (WPMotor.u16_CompOnDelay == 0) && (SystemMode.f_SelfClean == 0))
 		{
-		
-			//打水电机启动瞬间
+
+			//打水电机启动瞬间（自清洁功能开启时不启动打水电机）
 			WPMotor.f_DrvOn = ON;
 		}
 	}

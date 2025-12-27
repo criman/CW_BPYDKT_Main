@@ -137,6 +137,7 @@ typedef    struct
 	U8    f_AntiDew		   :1;		//防凝露        0:无效  1：生效
 	U8	  f_AntiDewMark	   :1;		//防凝露		0:未曾	1：已进入不能再重复进入
 	U8    f_PerTest		   :1;		//能力测试		0:退出  1: 进入
+	U8    f_SelfClean	   :1;		//自清洁功能	0:关闭  1:开启
 	U8    f_Error		   :1;		//故障
 
 }

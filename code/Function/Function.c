@@ -186,7 +186,7 @@ void 	App_Status_On(void)
 			SystemMode.f_Fan = 0;
 			SystemMode.f_Auto = 0;
 			
-			if ((SystemMode.f_PerTest == 1) && ((Tempr.u8_TempCSet == 29) || (Tempr.u8_TempCSet == 30)))
+			if ((SystemMode.f_PerTest == 1) && ((Tempr.u8_TempCSet == 29) || (Tempr.u8_TempCSet == 30)) && (SystemMode.f_SelfClean == 0))
 			{
 				Comp.f_AppOn = ON;
 			}	
@@ -200,7 +200,7 @@ void 	App_Status_On(void)
 				}
 				else if (Tp.f_Error == 1)
 				{
-					if (Tp.u16_ErrCount	< 6000)	//开10min
+					if ((Tp.u16_ErrCount	< 6000) && (SystemMode.f_SelfClean == 0))	//开10min，自清洁功能开启时不启动
 					{
 						Comp.f_AppOn = ON;
 					}
@@ -215,9 +215,9 @@ void 	App_Status_On(void)
 				}				
 				else if ((T1.f_Error == 1) || (T4.f_Error == 1))
 				{
-					if (T1.f_Error == 1) 
+					if (T1.f_Error == 1)
 					{
-						if (T1.u16_ErrCount	< 18000)	//开30min
+						if ((T1.u16_ErrCount	< 18000) && (SystemMode.f_SelfClean == 0))	//开30min，自清洁功能开启时不启动
 						{
 							Comp.f_AppOn = ON;
 							Comp.u8_InitIndex = 8;
@@ -304,7 +304,7 @@ void 	App_Status_On(void)
 				}
 				else if (Tp.f_Error == 1)
 				{
-					if (Tp.u16_ErrCount	< 6000)	//开10min
+					if ((Tp.u16_ErrCount	< 6000) && (SystemMode.f_SelfClean == 0))	//开10min，自清洁功能开启时不启动
 					{
 						Comp.f_AppOn = ON;
 					}
@@ -831,17 +831,18 @@ void 	App_Status_On(void)
 			{
 				if ((Comp.f_DrvOn == OFF) && (Tempr.T1TSDeltaZone < ENUM_TEMPDELTAZONE_G) && (Tempr.T1TSDeltaZone != ENUM_TEMPDELTAZONE_INIT))
 				{
-					if ((Protect.T2ColdStatus != ENUM_PROSTATUS_PROTECT) && (Tempr.T2HeatZone != ENUM_TEMPT2HEATZONE_PRO) && 
-						(Protect.T3ColdStatus != ENUM_PROSTATUS_PROTECT) && 
+					if ((Protect.T2ColdStatus != ENUM_PROSTATUS_PROTECT) && (Tempr.T2HeatZone != ENUM_TEMPT2HEATZONE_PRO) &&
+						(Protect.T3ColdStatus != ENUM_PROSTATUS_PROTECT) &&
 						(Tempr.T4CoolZone != ENUM_TEMPT4COOLZONE_STOP) && (Tempr.T4CoolZone != ENUM_TEMPT4COOLZONE_PRO) && (Tempr.T4CoolZone != ENUM_TEMPT4COOLZONE_PRO1) &&
 						(Tempr.T4HeatZone != ENUM_TEMPT4HEATZONE_PRO) && (Tempr.T4HeatZone != ENUM_TEMPT4HEATZONE_PRO1) &&
-						(Protect.TpStatus != ENUM_PROSTATUS_PROTECT) &&			
+						(Protect.TpStatus != ENUM_PROSTATUS_PROTECT) &&
 						(Protect.CurrColdStatus != ENUM_PROSTATUS_PROTECT) && (Protect.CurrHeatStatus != ENUM_PROSTATUS_PROTECT) &&
-						(Protect.CompCurrStatus != ENUM_PROSTATUS_PROTECT) && (Protect.f_HumiT1Low != 1)) //满足开压缩机 //lcx add  20240620 Protect.f_HumiT1Low
+						(Protect.CompCurrStatus != ENUM_PROSTATUS_PROTECT) && (Protect.f_HumiT1Low != 1) &&
+						(SystemMode.f_SelfClean == 0)) //自清洁功能开启时不启动压缩机
 					{
 						Comp.f_AppOn = ON;
-						SystemMode.f_TempCEC = 0;	
-					}			
+						SystemMode.f_TempCEC = 0;
+					}
 				}
 			}
 		}

@@ -888,12 +888,24 @@ void    DisplayBoard_Byte15_Con(void)
 			}
 		}
 
-		if (CmdInBak.Byte15.var.Lighting != CommDisp.Rx.Byte15.var.Lighting)
+		// if (CmdInBak.Byte15.var.Lighting != CommDisp.Rx.Byte15.var.Lighting)
+		// {
+		// 	if (CommDisp.Rx.Byte15.var.Lighting == ENUM_ENABLE)			;//灯光标志开启
+		// 	else														;//灯光标志关闭
+		// }
+
+		if (CmdInBak.Byte15.var.SelfClean != CommDisp.Rx.Byte15.var.SelfClean)
 		{
-			if (CommDisp.Rx.Byte15.var.Lighting == ENUM_ENABLE)			;//灯光标志开启
-			else														;//灯光标志关闭
+			if (CommDisp.Rx.Byte15.var.SelfClean == ENUM_ENABLE)
+			{
+				SystemMode.f_SelfClean = 1;		//自清洁功能开启
+			}
+			else
+			{
+				SystemMode.f_SelfClean = 0;		//自清洁功能关闭
+			}
 		}
-		
+
 		CmdInBak.Byte15.Byte = CommDisp.Rx.Byte15.Byte;
 	}
 }

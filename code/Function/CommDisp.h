@@ -415,7 +415,7 @@ typedef    enum
 typedef    struct
 {
 	U8				  DeNoise		:1;		//消噪（保守）
-	U8				  Reserved0		:1;		//预留
+	ENUM_FLAG		  SelfClean		:1;		//自清洁状态	(1:正在自清洁)
 	U8				  DeWatering	:1;		//除水标志		(1:开启)
 //	U8				  DeWatering	:1;		//除水标志		(1:开启)
 	ENUM_DISPSTATUS	  DispStatus	:2;		//屏显状态
@@ -570,7 +570,8 @@ typedef    struct
 	ENUM_PLATFORM	   PlatForm		:4;		//平台机型
 	ENUM_FLAG		   AutoMode		:1;		//自动模式		(1:有自动模式)
 	ENUM_FLAG		   ForceMode	:1;		//强力模式		(1:开启)
-	ENUM_FLAG		   Lighting		:1;		//灯光标志		(1:开启)
+	// ENUM_FLAG		   Lighting		:1;		//灯光标志		(1:开启)
+	ENUM_FLAG		   SelfClean	:1;		//自清洁功能	(1:开启)
 	ENUM_FLAG		   f_DeNoise	:1;		//保守
 }STRUCT_RXBYTE15;
 //--------------------------------------------------------------------------------------------------//
