@@ -477,17 +477,20 @@ void    Drv_Fan_InDoor(void)
 				}
 				else if (SystemMode.f_Sleep)
 				{
-					if (T4.s16_ValueMul10 >= 330)
+					//睡眠模式下根据室内温度T1控制上风机转速
+					if (Tempr.SleepZone == ENUM_SLEEP_ZONE_1 || Tempr.SleepZone == ENUM_SLEEP_ZONE_2)
 					{
-						Fan.Indoor.u16_TargetRPM = 1150;
+						//温度区间1和2: 高风档950rpm
+						Fan.Indoor.u16_TargetRPM = 950;
 					}
-					else if (T4.s16_ValueMul10 >= 270)
+					else if (Tempr.SleepZone == ENUM_SLEEP_ZONE_3)
 					{
-						Fan.Indoor.u16_TargetRPM = 1100;
+						//温度区间3: 高风档800rpm
+						Fan.Indoor.u16_TargetRPM = 800;
 					}
 					else
 					{
-						Fan.Indoor.u16_TargetRPM = 800;
+						Fan.Indoor.u16_TargetRPM = 950;	//默认值
 					}
 				}
 				else
@@ -532,17 +535,20 @@ void    Drv_Fan_InDoor(void)
 				}
 				else if (SystemMode.f_Sleep)
 				{
-					if (T4.s16_ValueMul10 >= 330)
+					//睡眠模式下根据室内温度T1控制上风机转速
+					if (Tempr.SleepZone == ENUM_SLEEP_ZONE_1 || Tempr.SleepZone == ENUM_SLEEP_ZONE_2)
 					{
-						Fan.Indoor.u16_TargetRPM = 1050;
-					}
-					else if (T4.s16_ValueMul10 >= 270)
-					{
+						//温度区间1和2: 中风档950rpm
 						Fan.Indoor.u16_TargetRPM = 950;
+					}
+					else if (Tempr.SleepZone == ENUM_SLEEP_ZONE_3)
+					{
+						//温度区间3: 中风档800rpm
+						Fan.Indoor.u16_TargetRPM = 800;
 					}
 					else
 					{
-						Fan.Indoor.u16_TargetRPM = 800;
+						Fan.Indoor.u16_TargetRPM = 950;	//默认值
 					}
 				}
 				else
@@ -587,17 +593,20 @@ void    Drv_Fan_InDoor(void)
 				}
 				else if (SystemMode.f_Sleep)
 				{
-					if (T4.s16_ValueMul10 >= 330)
+					//睡眠模式下根据室内温度T1控制上风机转速
+					if (Tempr.SleepZone == ENUM_SLEEP_ZONE_1 || Tempr.SleepZone == ENUM_SLEEP_ZONE_2)
 					{
-						Fan.Indoor.u16_TargetRPM = 850;
+						//温度区间1和2: 低风档950rpm
+						Fan.Indoor.u16_TargetRPM = 950;
 					}
-					else if (T4.s16_ValueMul10 >= 270)
+					else if (Tempr.SleepZone == ENUM_SLEEP_ZONE_3)
 					{
+						//温度区间3: 低风档800rpm
 						Fan.Indoor.u16_TargetRPM = 800;
 					}
 					else
 					{
-						Fan.Indoor.u16_TargetRPM = 800;
+						Fan.Indoor.u16_TargetRPM = 950;	//默认值
 					}
 				}
 				else

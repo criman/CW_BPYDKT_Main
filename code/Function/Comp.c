@@ -1545,19 +1545,61 @@ void    App_Comp_Sleep(void)
 		{
 			if (SystemMode.f_Cold == 1)
 			{
-				//制冷睡眠限频
-				if (Comp.u8_TargetFreq > Comp.u8_Cold_TargetHZ[1])
+				//制冷睡眠限频 - 根据温度区间控制
+				if (Tempr.SleepZone == ENUM_SLEEP_ZONE_1 || Tempr.SleepZone == ENUM_SLEEP_ZONE_2)
 				{
-					Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[1];	//FC1
+					//温度区间1和2: 所有档位都是当前档位-1（最低FC1）
+					U8 targetIndex = (Comp.u8_InitIndex > 1) ? (Comp.u8_InitIndex - 1) : 1;
+					if (Comp.u8_TargetFreq > Comp.u8_Cold_TargetHZ[targetIndex])
+					{
+						Comp.u8_TargetFreq = Comp.u8_Cold_TargetHZ[targetIndex];
+					}
+					if (Comp.u8_TargetHZ > Comp.u8_Cold_TargetHZ[targetIndex])
+					{
+						Comp.u8_TargetHZ = Comp.u8_Cold_TargetHZ[targetIndex];
+					}
+				}
+				else if (Tempr.SleepZone == ENUM_SLEEP_ZONE_3)
+				{
+					//温度区间3: 所有档位都是34Hz
+					if (Comp.u8_TargetFreq > 34)
+					{
+						Comp.u8_TargetFreq = 34;
+					}
+					if (Comp.u8_TargetHZ > 34)
+					{
+						Comp.u8_TargetHZ = 34;
+					}
 				}
 			}
 			else if (SystemMode.f_Heat == 1)
 			{
-				//制热睡眠限频
-				if (Comp.u8_TargetFreq > Comp.u8_Heat_TargetHZ[1])
+				//制热睡眠限频 - 根据温度区间控制
+				if (Tempr.SleepZone == ENUM_SLEEP_ZONE_1 || Tempr.SleepZone == ENUM_SLEEP_ZONE_2)
 				{
-					Comp.u8_TargetFreq = Comp.u8_Heat_TargetHZ[1];	//FH1
-				}		
+					//温度区间1和2: 所有档位都是当前档位-1（最低FH1）
+					U8 targetIndex = (Comp.u8_InitIndex > 1) ? (Comp.u8_InitIndex - 1) : 1;
+					if (Comp.u8_TargetFreq > Comp.u8_Heat_TargetHZ[targetIndex])
+					{
+						Comp.u8_TargetFreq = Comp.u8_Heat_TargetHZ[targetIndex];
+					}
+					if (Comp.u8_TargetHZ > Comp.u8_Heat_TargetHZ[targetIndex])
+					{
+						Comp.u8_TargetHZ = Comp.u8_Heat_TargetHZ[targetIndex];
+					}
+				}
+				else if (Tempr.SleepZone == ENUM_SLEEP_ZONE_3)
+				{
+					//温度区间3: 所有档位都是34Hz
+					if (Comp.u8_TargetFreq > 34)
+					{
+						Comp.u8_TargetFreq = 34;
+					}
+					if (Comp.u8_TargetHZ > 34)
+					{
+						Comp.u8_TargetHZ = 34;
+					}
+				}
 			}
 		}
 	}

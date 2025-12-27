@@ -73,6 +73,15 @@ typedef enum
 	ENUM_CONSERVATIVE_ZONE_3,       //温度区间3: T1＜27℃
 }ENUM_CONSERVATIVE_ZONE;
 
+//睡眠功能温度区间枚举
+typedef enum
+{
+	ENUM_SLEEP_ZONE_INIT,           //初始值-不确定状态
+	ENUM_SLEEP_ZONE_1,              //温度区间1: T1≥33℃
+	ENUM_SLEEP_ZONE_2,              //温度区间2: 27℃≤T1＜33℃
+	ENUM_SLEEP_ZONE_3,              //温度区间3: T1＜27℃
+}ENUM_SLEEP_ZONE;
+
 //--------------------------------------------------------------------------------------------------//
 
 typedef    enum
@@ -165,6 +174,11 @@ typedef    struct
 	ENUM_CONSERVATIVE_ZONE ConservativeZone;		//当前保守功能温度区间
 	ENUM_CONSERVATIVE_ZONE ConservativeZoneBak;	//保守功能温度区间备份
 	U16 u16_ConservativeDelayCount;				//保守功能温度区间变化延时计数(10分钟=6000*100ms)
+
+	//睡眠功能相关变量
+	ENUM_SLEEP_ZONE SleepZone;					//当前睡眠功能温度区间
+	ENUM_SLEEP_ZONE SleepZoneBak;				//睡眠功能温度区间备份
+	U16 u16_SleepDelayCount;					//睡眠功能温度区间变化延时计数(10分钟=6000*100ms)
 	
 
 }STRUCT_TEMPR;
@@ -192,6 +206,17 @@ Revision History   1:
                    2:
 ****************************************************************************************************/
 void    TempConservativeZone(void);
+/****************************************************************************************************
+Function Name       :void	TempSleepZone(void)
+Description         :睡眠功能温度区间判断
+Input               :
+Return              :
+Author              :Assistant
+Version             :V1.0
+Revision History   1:
+                   2:
+****************************************************************************************************/
+void    TempSleepZone(void);
 /****************************************************************************************************
 Function Name       :void	Func_Temprature(void)
 Description         :温度处理
